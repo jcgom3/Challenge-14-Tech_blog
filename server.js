@@ -41,9 +41,9 @@ sequelize.sync({ force: false }).then(() => {
     app.listen(process.env.PORT ||3001, () => console.log('Now listening'));
   });
 
-  if (process.env.NODE_ENV === 'production') {
-    app.use(express.static('client/build'));
-  }
-  app.get('*', (request, response) => {
-    response.sendFile(path.join(__dirname, 'client/build', 'index.html'));
-  });
+  // if (process.env.NODE_ENV === 'production') {
+  //   app.use(express.static('client/build'));
+  // }
+  // app.get('*', (request, response) => {
+  //   response.sendFile(path.join(__dirname, 'client/build', 'index.html'));
+  // });
