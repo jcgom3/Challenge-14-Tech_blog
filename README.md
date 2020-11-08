@@ -52,7 +52,7 @@ In order to use this app on VS, install the node dependencies shown on package.j
 
 # Heroku Deployment
 
-
+[You can check out my app here](https://mvctechblogchallenge14.herokuapp.com/)
 
 # License
 ![license badge](https://img.shields.io/badge/license-MIT-brightgreen)
