@@ -12,7 +12,7 @@ const hbs = exphbs.create({ helpers });
 
 
 const sess = {
-    secret: process.env.DB_SESSION_SECRET,
+    secret: "Super secret secret",
     cookie: { maxAge: 7200000 },
     resave: false,
     saveUninitialized: true,
@@ -35,13 +35,15 @@ app.use(express.urlencoded({ extended: true }));
 app.use(session(sess));
 
 app.use(routes);
-if (process.env.NODE_ENV === 'production') {
-	app.use(express.static('client/build'));
-}
-app.get('*', (request, response) => {
-	response.sendFile(path.join(__dirname, 'client/build', 'index.html'));
-});
+
 
 sequelize.sync({ force: false }).then(() => {
     app.listen(process.env.PORT ||3001, () => console.log('Now listening'));
+  });
+
+  if (process.env.NODE_ENV === 'production') {
+    app.use(express.static('client/build'));
+  }
+  app.get('*', (request, response) => {
+    response.sendFile(path.join(__dirname, 'client/build', 'index.html'));
   });
