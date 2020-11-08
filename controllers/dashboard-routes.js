@@ -100,4 +100,4 @@ router.get('/edituser', withAuth, (req, res) => {
     })
   });
 
-module.exports = router;
+module.exs = router;
