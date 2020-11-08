@@ -4,9 +4,12 @@
 ## Tools Used
 
 * JavaScript
+* CSS
 * Handlebars
+* partials (From Handlebars)
 * Node.js
-* Inquirer
+* Express
+* Express-Handlebars
 * MySQL2
 * Sequelize
 * Dotenv
@@ -20,10 +23,10 @@
 
 
 # Summary
-Create an E-Commerce backend app using Javascript, Node.js, Express, MySQL2, Sequelize & Heroku.
+Create an Tech Blog using MVC essentials with Javascript, Node.js, Express, MySQL2, Sequelize, handlebars & Heroku.
 
 # Description
-This app allows users to view, add, update and remove employees using MySQL, node.js & JavaScript
+This app allows users to log in, sign up, view, add, update and remove comments on a blog.
 
 # Table of Contents 
 * [Installation & Database SetUp](#Installation)
@@ -35,16 +38,21 @@ This app allows users to view, add, update and remove employees using MySQL, nod
 
 # Installation & Database SetUp
 * To use this app npm init has to be called to create your package.json file.
-* The following necessary Npm dependencies must be installed to run the application properly: Express, Dotenv, Sequelize & MySQL2.
+* The following necessary Npm dependencies must be installed to run the application properly: the needed dependencies will be found on the package.json file.
 * To properly install the database you must install MySQL on your computer, create an profile in which you have a root and a password.
 * In your command line you must type mysql -u root -p and then enter, type your password that you created on MySQL on the following line.
-* To finally add the database you must do the following: source db/schema.sql then enter, source db/seeds.sql then enter.
+* To finally add the database you must do the following: source db/schema.sql then enter.
 * Run "npm run seeds" on command line
+* Run "npm start" for the port to start listening.
+* If on Heroku, all you have to do is login.
 
 
 
 # Usage
-In order to use this app, install the node dependencies shown on package.json & database setup. Run the app in the terminal on VS Code use npm start. Click on the video for a demonstration.
+In order to use this app on VS, install the node dependencies shown on package.json. Run the app in the terminal on VS Code use npm start. Click on the video for a demonstration.
+
+# Heroku Deployment
+
 
 
 # Demo
