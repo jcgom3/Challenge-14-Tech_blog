@@ -18,8 +18,7 @@
 
 
 
-# Mockup Image
-![screenshot](assets/images/TechBlogMockUp.png)
+
 
 
 # Summary
@@ -54,9 +53,6 @@ In order to use this app on VS, install the node dependencies shown on package.j
 # Heroku Deployment
 
 
-
-# Demo
-[![Demo-Video](assets/images/DemoVideo.png)](https://drive.google.com/file/d/16gyctIVFDmxSnRHlmOhxJp-t-esYPiJ1/view)
 
 # License
 ![license badge](https://img.shields.io/badge/license-MIT-brightgreen)
